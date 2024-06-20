@@ -1,0 +1,61 @@
+.past-history2 {
+  padding: 20px;
+  border: 3px dashed #444; /* Darker border color */
+  border-radius: 10px;
+  margin: 5vh auto; /* Center the container horizontally */
+  background-color: #333; /* Dark background color */
+  color: #f0f0f0; /* Light text color */
+  max-width: 1000px;
+}
+
+.past-history2 h2 {
+  margin-bottom: 15px;
+  color: #fff; /* Light color for headings */
+  text-align: center; /* Center the heading */
+}
+
+.past-history2 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Ensure the list takes the full width of the container */
+}
+
+.past-history2 li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 25vh;
+  background-color: #444; /* Darker background for list items */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.past-history2 p {
+  margin-bottom: 5px;
+  color: #ddd; /* Slightly lighter text for paragraphs */
+}
+
+.d1 {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  height: 100%;
+}
+
+.d1 img {
+  width: 40%;
+  object-position: center;
+  height: 70%;
+  border-radius: 50%;
+}
+
+.d1 div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 10px;
+  color: #f0f0f0; /* Light text color */
+}

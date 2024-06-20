@@ -1,0 +1,66 @@
+/* Container for the image slider */
+.slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 900px; /* Adjust according to your needs */
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Style for each slide */
+.slide {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+/* Active slide */
+.slide.active {
+  display: block;
+}
+
+/* Style for the images */
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Arrows for navigation */
+.left-arrow,
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.3s ease;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+/* Optional heading style */
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  color: #e0e0e0;
+  margin-top: 20px;
+}

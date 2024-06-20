@@ -1,0 +1,60 @@
+.t3clmform {
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #444; /* Darker border color */
+  border-radius: 5px;
+  background-color: #333; /* Dark background color */
+  width: 600px; /* Adjusted width to fit better on various screens */
+  color: #f0f0f0;
+   /* Light text color */
+   margin-top: 1rem;
+}
+
+.t3clmform h2 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #fff; /* Light color for headings */
+}
+
+.t3clmform div {
+  margin-bottom: 15px;
+}
+
+.t3clmform label {
+  font-weight: bold;
+  display: block;
+  color: #ddd; /* Slightly lighter text color for labels */
+}
+
+.t3clmform input,
+.t3clmform textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #555; /* Darker border for inputs */
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #444; /* Dark background color for inputs */
+  color: #f0f0f0; /* Light text color for inputs */
+  font-size: 1em;
+}
+
+.t3clmform textarea {
+  resize: vertical; /* Allows vertical resizing */
+  height: 100px; /* Initial height for textarea */
+}
+
+.t3clmform button.submit {
+  width: 100%;
+  padding: 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.t3clmform button.submit:hover {
+  background-color: #45a049;
+}

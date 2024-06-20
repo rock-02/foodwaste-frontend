@@ -1,0 +1,166 @@
+/* Basic styles for the form container */
+.postFood-form2 {
+  margin: 2rem auto;
+  width: fit-content; /* Adjust width as needed */
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex; /* Enable flexbox layout for centering */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center elements along the main axis (vertically) */
+  background-color: #0000008c;
+}
+
+/* Styles for the form heading */
+.postFood-form2 h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: xx-large;
+}
+
+/* Styles for labels */
+.postFood-form2 label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+/* Styles for input fields */
+.postFood-form2 input,
+.postFood-form2 textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box; /* Ensures content fits within padding */
+}
+
+/* Styles for the textarea */
+.postFood-form2 textarea {
+  min-height: 100px; /* Adjust minimum height as needed */
+}
+
+/* Styles for the checkbox */
+.postFood-form2 input[type="checkbox"] {
+  width: auto; /* Removes default checkbox size */
+  margin-right: 1rem;
+}
+
+/* Styles for the submit button container (optional for better separation) */
+.postFood-form2 .submit-button-container {
+  display: flex;
+  justify-content: center; /* Center the button horizontally within its container */
+  margin-top: 1rem; /* Add margin for spacing */
+}
+
+/* Styles for the submit button */
+.postFood-form2 button[type="submit"] {
+  background-color: #4caf50; /* Green color */
+  color: white;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Styles for the submit button on hover */
+.postFood-form2 button[type="submit"]:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.one_Login_Login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.one_Login_row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.one_Login_col {
+  flex: 1;
+  padding: 0 15px;
+}
+
+.one_Login_vision-text {
+  width: 100%;
+}
+
+.one_Login_vision-image-container {
+  width: 100%;
+}
+
+.one_Login_vision-image-container img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.one_Login_one_myform {
+  border-radius: 15px;
+  padding: 20px 20px;
+  max-width: 500px;
+  min-height: 400px;
+  margin: 30px auto; /* Center the form horizontally */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.one_Login_one_myform div {
+  margin: 20px 0;
+}
+
+.one_Login_inputi,
+.one_Login_one_myform select {
+  width: 100%;
+  padding: 10px 7px;
+  border: none;
+  background-color: #f0f0f0; /* Light gray background color */
+  border-radius: 5px;
+  margin-bottom: 15px;
+  user-select: none;
+}
+
+.one_Login_btn {
+  background-color: #008080;
+  font-size: 16px;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  user-select: none;
+  width: 100%;
+  padding: 10px 7px;
+}
+
+.one_Login_btn:hover {
+  background-color: #008080;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.one_Login_image_col {
+  margin-left: 100px;
+}
+
+.one_placeholder {
+  background-color: #f0f0f0;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 10px 7px;
+}
+.one_date_and_time {
+  margin-left: 10px;
+  padding: 10px 7px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #f0f0f0;
+  margin-bottom: 15px;
+}

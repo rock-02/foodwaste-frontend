@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: "Roboto", sans-serif;
+  margin: 0; /* Remove default margin */
+  overflow-x: hidden; /* Prevent horizontal scroll on the body */
+}
+
+/* Background Image Container */
+.dontaionId {
+  background-image: url(https://t4.ftcdn.net/jpg/04/98/47/53/360_F_498475327_1fHyorA3Pf0PVeOaIBc5XcjKvliiZCrs.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%; /* Change from 100vw to 100% */
+  height: 100vh;
+  overflow: hidden;
+  margin-top: 2vw;
+  margin-left: 1vw;
+  margin-right: 1vw; /* Ensure no overflow within the container */
+}
+
+/* Donation Container */
+.donation-container {
+  max-width: 800px;
+  margin: 2vw auto 0 auto;
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #1e1e1e;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+/* Heading Styles */
+h1 {
+  text-align: center;
+  color: #e0e0e0;
+}
+
+h2 {
+  color: #bb86fc;
+  margin-bottom: 10px;
+}
+
+/* Paragraph Styles */
+p {
+  margin: 5px 0;
+  color: #e0e0e0;
+}
+
+/* Strong Tag Styles */
+strong {
+  color: #bb86fc;
+}
+
+/* Donation Details Section */
+.donation-details,
+.user-details {
+  margin-bottom: 20px;
+}
+
+.donation-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* User Section */
+.user-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+.details {
+  flex: 1;
+}
+
+/* Feedback Form Styles */
+.feedback-form {
+  background-color: #2e2e2e;
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-form h2 {
+  color: #bb86fc;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.feedback-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.feedback-form .form-group {
+  margin-bottom: 20px;
+}
+
+.feedback-form label {
+  color: #e0e0e0;
+  margin-bottom: 5px;
+}
+
+.feedback-form input,
+.feedback-form textarea,
+.feedback-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #1e1e1e;
+  color: #dfe605;
+}
+
+.feedback-form .rating {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.feedback-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #bb86fc;
+  color: #121212;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: center;
+}
+
+.feedback-form button:hover {
+  background-color: #9b6bc1;
+}
