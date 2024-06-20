@@ -19,7 +19,6 @@ import ProfileModal from "../EditProfile/ProfileModal";
 const pages = [
   { name: "Home", path: "/home" },
   { name: "About", path: "/about" },
-  { name: "Contact Us", path: "/contact" },
 ];
 
 function ResponsiveAppBar() {
@@ -47,7 +46,7 @@ function ResponsiveAppBar() {
   // Fetch user details on component mount
   React.useEffect(() => {
     fetchUser();
-  }, []);
+  }, [user]);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -76,6 +75,7 @@ function ResponsiveAppBar() {
   const handleLogout = () => {
     localStorage.removeItem("token");
     navigate("/login");
+    setUser(null);
   };
 
   const handleCloseProfileModal = () => {
@@ -202,7 +202,9 @@ function ResponsiveAppBar() {
               onClose={handleCloseUserMenu}
             >
               <MenuItem
-                onClick={handleOpenProfileModal}
+                onClick={() => {
+                  if (user) handleOpenProfileModal();
+                }}
                 sx={{
                   background: "#1f1f1f",
                 }}

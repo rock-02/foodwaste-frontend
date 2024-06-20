@@ -47,22 +47,22 @@ const ProfileModal = ({ open, onClose }) => {
 
   const [selectedFile, setSelectedFile] = React.useState(null); // State to hold selected file
 
-  React.useEffect(() => {
-    const fetchUser = async () => {
-      try {
-        const token = localStorage.getItem("token");
-        const response = await axios.get(`${baseUrl}/api/user`, {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        });
-        setUser(response.data);
-        console.log("User fetched successfully:", response.data);
-      } catch (error) {
-        console.error("Error fetching user:", error);
-      }
-    };
+  const fetchUser = async () => {
+    try {
+      const token = localStorage.getItem("token");
+      const response = await axios.get(`${baseUrl}/api/user`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+      setUser(response.data);
+      console.log("User fetched successfully:", response.data);
+    } catch (error) {
+      console.error("Error fetching user:", error);
+    }
+  };
 
+  React.useEffect(() => {
     fetchUser();
   }, []); // Removed user dependency to prevent infinite loop
 
@@ -114,7 +114,8 @@ const ProfileModal = ({ open, onClose }) => {
 
       console.log("User profile updated successfully:", response.data);
       setUser(response.data); // Update user state with response data
-      onClose(); // Close the modal after submission
+      onClose();
+      fetchUser();
     } catch (error) {
       console.error("Error updating user profile:", error);
     }
